@@ -1,0 +1,21 @@
+● named.service - BIND Domain Name Server
+     Loaded: loaded (/lib/systemd/system/named.service; enabled; vendor preset: enabled)
+     Active: active (running) since Tue 2026-03-03 18:48:17 UTC; 24min ago
+       Docs: man:named(8)
+   Main PID: 678 (named)
+      Tasks: 4 (limit: 1099)
+     Memory: 30.1M
+        CPU: 1.567s
+     CGroup: /system.slice/named.service
+             └─678 /usr/sbin/named -u bind
+
+Mar 03 18:48:17 esclavo systemd[1]: Started BIND Domain Name Server.
+Mar 03 18:48:17 esclavo named[678]: running
+Mar 03 18:48:17 esclavo named[678]: zone juanjosesantacruz.com/IN: sending notifies (serial 1)
+Mar 03 18:48:17 esclavo named[678]: zone empresa.local/IN: sending notifies (serial 4)
+Mar 03 18:48:24 esclavo named[678]: no longer listening on 10.0.2.15#53
+Mar 03 18:48:24 esclavo named[678]: no longer listening on fd17:625c:f037:2:10:bdff:fe49:b76d#53
+Mar 03 18:48:24 esclavo named[678]: no longer listening on 192.168.56.11#53
+Mar 03 18:48:24 esclavo named[678]: listening on IPv4 interface enp0s3, 10.0.2.15#53
+Mar 03 18:48:24 esclavo named[678]: listening on IPv4 interface enp0s8, 192.168.56.11#53
+Mar 03 18:48:25 esclavo named[678]: listening on IPv6 interface enp0s3, fd17:625c:f037:2:10:bdff:fe49:b76d#53
